@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    let dices = [ #imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix") ]
+    
+    @IBOutlet weak var diceImageView1: UIImageView!
+    
+    @IBOutlet weak var diceImageView2: UIImageView!
+    
+    @IBAction func rollButtomClick(_ sender: UIButton) {
+        diceImageView1.image = dices.randomElement()
+        diceImageView2.image = dices.randomElement()
+        // diceImageView2.image = dices[Int.random(in: 0...5)]
     }
-
-
+    
 }
+
 
