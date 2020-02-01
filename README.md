@@ -1,5 +1,5 @@
 # Dicee
-Simple, and lightweight IOS app that can be used for any situation that requires a random number generation. You can roll two of 6 numbers dice at once.
+Simple, and lightweight IOS app that can be used for any situation that requires a random number generation. You can roll two of (6 numbers) dices at once.
 
 ## Preview
 
