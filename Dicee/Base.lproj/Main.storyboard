@@ -11,17 +11,12 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dicee" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-7k-uvH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppBreweryBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-7k-uvH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6DU-BD-X1h">
-                                <rect key="frame" x="1" y="86" width="414" height="193"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4L1-ZO-LLF">
                                 <rect key="frame" x="55" y="388" width="120" height="120"/>
@@ -33,8 +28,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.6148123741" green="0.1017967239" blue="0.1002308354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXt-de-m8F" colorLabel="IBBuiltInLabel-Yellow">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXt-de-m8F" colorLabel="IBBuiltInLabel-Yellow">
                                 <rect key="frame" x="0.0" y="694" width="414" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
                                 <state key="normal" title="Roll">
@@ -44,14 +40,19 @@
                                     <action selector="rollButtomClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Av-tL-lCz"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="6DU-BD-X1h">
+                                <rect key="frame" x="1" y="86" width="414" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXt-de-m8F" secondAttribute="trailing" id="NP1-1W-vd1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cXt-de-m8F" secondAttribute="bottom" constant="100" id="WAr-Gu-W8s"/>
-                            <constraint firstItem="cXt-de-m8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vZG-Rr-gz5"/>
+                            <constraint firstItem="Twn-7k-uvH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bss-Y2-Jgj"/>
+                            <constraint firstItem="Twn-7k-uvH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lfO-ra-n6z"/>
+                            <constraint firstItem="Twn-7k-uvH" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="mUc-mc-vRJ"/>
+                            <constraint firstItem="Twn-7k-uvH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wMH-6T-nAX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="iTU-XI-59v"/>
                     </view>
                     <connections>
                         <outlet property="diceImageView1" destination="4L1-ZO-LLF" id="NOJ-Wb-u40"/>
@@ -60,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
         </scene>
     </scenes>
     <resources>
